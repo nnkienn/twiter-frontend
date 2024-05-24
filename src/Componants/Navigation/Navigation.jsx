@@ -10,10 +10,10 @@ const Navigation = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
+        setAnchorEl(event.currentTarget);
     };
     const handleClose = () => {
-      setAnchorEl(null);
+        setAnchorEl(null);
     };
     const handleLogout = () => {
         console.log('logout');
@@ -50,13 +50,12 @@ const Navigation = () => {
             </div>
 
             <div className='flex items-center justify-between'>
-                <div className='flex items-center space-x-3'>
-                    <Avatar alt="username" src='' />
+                <div className="flex items-center space-x-3">
+                    <Avatar alt="username" src="" />
                     <div>
-                        <span>Nguyễn trung kiên</span>
-                        <span className='opacity-70'>@kinkin</span>
+                        <span className="block">Nguyễn kiên</span>
+                        <span className="block opacity-70">@kinkfwefwe</span>
                     </div>
-                   
                 </div>
                 <Button
                     id="basic-button"
@@ -65,7 +64,7 @@ const Navigation = () => {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
                 >
-                     <MoreHorizIcon />
+                    <MoreHorizIcon />
                 </Button>
                 <Menu
                     id="basic-menu"
@@ -77,7 +76,7 @@ const Navigation = () => {
                     }}
                 >
                     <MenuItem onClick={handleLogout}>Logout</MenuItem>
-                    
+
                 </Menu>
             </div>
         </div>
